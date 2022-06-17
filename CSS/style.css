@@ -420,7 +420,7 @@ nav ul li a:hover{
 
 /* specification */
 #specs{
-    padding: 3rem 0;
+    padding: 3rem 0 .5rem 0;
     padding-left: 8%;
     padding-right: 8%;
     background-color: black;
@@ -502,6 +502,27 @@ nav ul li a:hover{
     margin-bottom: 25px;
 }
 /* end specification */
+
+/* start footer */
+#footer{
+    padding: 0rem 0 1.7rem 0;
+    padding-left: 8%;
+    padding-right: 8%;
+    background-color: black;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 20px;
+}
+#footer i{
+    color: red;
+    margin: 0 5px;
+}
+#footer b{
+    margin-left: 5px;
+}
+/* end footer */
 
 /* start media query here */
 @media only screen and (max-width:768px){
