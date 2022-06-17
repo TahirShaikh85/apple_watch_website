@@ -1,0 +1,412 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* start navbar here */
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 50px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+.menu-icon{
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+nav ul li a:hover{
+    color: #ff5ea2;
+}
+/* end navbar here */
+
+/* start main area here */
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+.row .col-1{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+.row .col-1 h2{
+    font-size: 54px;
+    font-family: 'Train One', cursive;
+    font-weight: normal;
+}
+.row .col-1 h3{
+    font-size: 30px;
+    color: #707070;
+    font-weight: 100;
+    margin: 20px 0 10px;
+}
+.row .col-1 p{
+    font-size: 18px;
+    color: #b7b7b7;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+.row .col-1 h4{
+    margin: 30px 0;
+    font-size: 20px;
+    font-family: 'New Tegomin', serif;
+    letter-spacing: 2px;
+}
+.row .col-1 button{
+    width: 145px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: #fff;
+    background: linear-gradient(115deg, #000000, #525252);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: width .5s;
+}
+.row .col-1 img{
+    width: 30px;
+    display: none;
+}
+.row .col-1 button:hover img{
+    display: block;
+}
+.row .col-1 button:hover{
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.row .col-1::after{
+    content: '';
+    width: 10px;
+    height: 57%;
+    background: linear-gradient(115deg, #000000, #525252);
+    position: absolute;
+    left: -40px;
+    top: 8px;
+}
+.row .col-2{
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+}
+.row .col-2 .controller{
+    width: 45%;
+    transform: rotate(28deg);
+    margin-left: 90px;
+    margin-top: -13px;
+}
+.row .col-2 .color-box{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: linear-gradient(115deg, #000000, #525252);
+    height: 100%;
+    width: 80%;
+    z-index: -1;
+    transform: translateX(150px);
+}
+.row .col-2 .add-btn{
+    margin-left: 60px;
+}
+.row .col-2 .add-btn img{
+    width: 35px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+.row .col-2 .add-btn p small{
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+/* end main area here */
+
+/* start social here */
+.social-links{
+    text-align: center;
+}
+.social-links i{
+    font-size: 18px;
+    margin: 13px 10px;
+    cursor: pointer;
+    color: black;
+}
+/* end social here */
+
+/* start features section here */
+#features{
+    padding: 3.5rem 0;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+#features h1{
+    font-size: 54px;
+    padding: 20px
+}
+#features .f-img2{
+    display: none;
+}
+#features .f-para{
+    color: white !important;
+    font-size: 20px;
+    width: 50%;
+    margin: 20px auto;
+    line-height: 2rem;
+}
+#features .f-list{
+    padding: 20px 0;
+    font-size: 20px;
+}
+#features span{
+    vertical-align: top !important;
+    font-weight: bold;
+    text-align: left;
+}
+#features .f-list img{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+#features .f-touch{
+    margin-right: 0;
+    margin-left: -43px;
+}
+#features .f-display{
+    margin-right: 0;
+    margin-left:-23px;
+}
+#features .f-list li{
+    padding: 15px 0;
+}
+#features .row .col-1::after{
+    display: none;
+}
+#features .row .col-1 img{
+    display: block;
+    width: 50%;
+    margin-left: 85px;
+}
+#features .row .col-2 ul li{
+    list-style: none;
+}
+/* end features section here */
+
+/* start heart rate section here */
+#heart img{
+    display: block;
+}
+#heart .row{
+    margin: 50px 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+ 
+#heart .row .col-1::after{
+    display: none;
+}
+#heart .row .col-2 img{
+    display: block;
+    width: 50%;
+    margin-left: 50px;
+}
+#heart .heart-heading{
+    font-size: 34px;
+}
+#heart .heart-text{
+    padding: 30px 0;
+    font-size: 20px;
+    line-height: 2rem;
+}
+#heart .heart-heading i{
+    color: red;
+    padding: 0 5px;
+}
+#heart .heart-feature{
+    font-size: 22px;
+    font-weight: bold;
+    word-spacing: .3rem;
+}
+#heart .heart-feature i{
+    font-size: 24px;
+}
+#heart .heart-img2{
+    display: none;
+}
+/* end heart rate section here */
+
+/* start sport section here */
+#sport .sport-box{
+    width: 50%;
+}
+#sport .row{
+    font-family: 'Roboto', sans-serif;
+}
+#sport .col-1{
+    flex-basis: 60%;
+}
+#sport .col-2{
+    flex-basis: 40%;
+    display: block;
+}
+#sport .col-1 img{
+    width: 60%;
+    display: block;
+    border-radius: 20px;
+    margin-left: 85px;
+}
+#sport .col-1::after{
+    display: none;
+}
+#sport .sport-heading{
+    font-size: 34px;
+}
+#sport .sport-text{
+    padding: 30px 10px;
+    font-size: 20px;
+    line-height: 2rem;
+}
+#sport .sport-feature{
+    font-size: 22px;
+    font-weight: bold;
+    word-spacing: .3rem;
+}
+#sport .sport-feature img{
+    width: 35px;
+    height: 35px;
+    margin-top: 10px !important;
+    margin-left: 10px;
+}
+/* end sport section here */
+
+/* start notification area here */
+#notification{
+    padding: 3.5rem 0;
+    text-align: center;
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+#notification .col-1{
+    flex-basis: 30%;
+}
+#notification .col-1::after{
+    display: none;
+}
+#notification .col-2{
+    flex-basis: 20%;
+}
+#notification .col-3{
+    flex-basis: 30%;
+}
+#notification .col-4{
+    flex-basis: 20%;
+}
+#notification .col-4 img{
+    width: 85%;
+}
+#notification .col-2 img{
+    width: 100%;
+    margin-left: 15px;
+    margin-right: 35px;
+}
+#notification .noti-heading{
+    font-size: 34px;
+    letter-spacing: 1px;
+}
+#notification .noti-img2{
+    display: none;
+}
+#notification .chat-img2{
+    display: none;
+}
+/* end notification area here */
+
+/* start call area here */
+#call{
+    padding: 3rem 0 0 0;
+    font-family: 'Roboto', sans-serif;
+}
+#call .col-1 img{
+    display: block;
+    width: 50%;
+    margin-left: 85px;
+}
+#call .col-1::after{
+    display: none;
+}
+#call .col-2{
+    display: block;
+}
+#call .call-heading{
+    font-size: 34px;
+    letter-spacing: 1px;
+}
+#call .call-heading b{
+    color: rgb(3, 250, 98);
+}
+#call .call-siri{
+    font-size: 30px;
+    padding: 20px 0;
+    letter-spacing: 1px;
+}
+#call .call-siri b{
+    color: rgb(3, 250, 98);
+}
+/* end call area here */
+
+/* start emergency are here */
+
+/* end emergency are here */
+
+/* start specification area here */
+
+/* end specification area here */
+
+/* start media query here */
+@media only screen and (max-width:768px){
+  
+}
+
+@media only screen and (max-width:425px){
+   
+}
