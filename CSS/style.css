@@ -418,9 +418,90 @@ nav ul li a:hover{
 }
 /* end emergency */
 
-/* start specification area here */
-
-/* end specification area here */
+/* specification */
+#specs{
+    padding: 3rem 0;
+    padding-left: 8%;
+    padding-right: 8%;
+    background-color: black;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+#specs .accordian{
+    width: 90%;
+    margin: 50px;
+}
+#specs .specs-heading{
+    font-size: 34px;
+    font-weight: bold;
+    padding:10px 10px 0 10px;
+}
+#specs .accordian .accordian-tab > label{
+    color: white;
+    font-size: 22px;
+    position: relative;
+    display: block;
+    padding:25px 20px;
+    cursor: pointer;
+    border-top: 1px solid #fff;
+    text-transform: uppercase;
+}
+#specs .accordian .accordian-tab > .accordian-content{
+    max-height: 0;
+    transition: all .4s;
+    overflow: hidden;
+}
+#specs .accordian .accordian-tab > .accordian-toggle:checked ~ .accordian-content{
+    padding: 10px 30px 50px 30px;
+    max-height: 220vh;
+}
+#specs .accordian .accordian-tab > .accordian-toggle{
+    display: none;
+}
+#specs .accordian .accordian-tab > label:after{
+    content: "\f067";
+    font-family: 'fontawesome';
+    position: absolute;
+    top: 22px;
+    right: 25px;
+    color: white;
+    transform: rotate(90deg);
+    transition: transform .5s;
+}
+.accordian-tab > .accordian-toggle:checked ~ label:after{
+    content: "\f068" !important;
+    font-family: 'fontawesome';
+    transform: rotate(0deg) !important;
+}
+#specs .accordian-content > span{
+    font-weight: bold;
+    font-size: 18px;
+}
+#specs .accordian-content > p{
+    margin-top: 20px;
+    margin-left: 8px;
+    font-size: 18px;
+}
+#specs .display > p{
+    margin-bottom: 25px;
+}
+#specs .sensor > p{
+    margin-bottom: 25px;
+}
+#specs .battery > p{
+    margin-bottom: 25px;
+}
+#specs .physicalSspecification > p{
+    margin-bottom: 25px;
+}
+#specs .healthFeature > p{
+    margin-bottom: 25px;
+}
+#specs .smartFeature > p{
+    margin-bottom: 25px;
+}
+/* end specification */
 
 /* start media query here */
 @media only screen and (max-width:768px){
